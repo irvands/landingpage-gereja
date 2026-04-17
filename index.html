@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gereja Kasih Abadi - Pelayanan Injil yang Hidup</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class'
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/style.css">
+
+<body class="bg-white dark:bg-slate-950 text-slate-900 dark:text-slate-50 smooth-transition">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 smooth-transition">
+        <div class="glass">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+                <div class="flex items-center space-x-2">
+                    <div
+                        class="w-10 h-10 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg flex items-center justify-center">
+                        <span class="text-white font-bold text-lg">⛪</span>
+                    </div>
+                    <span class="font-bold text-lg gradient-text">Gereja Kasih Abadi</span>
+                </div>
+
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#beranda"
+                        class="smooth-transition hover:text-blue-600 dark:hover:text-blue-400">Beranda</a>
+                    <a href="#jadwal" class="smooth-transition hover:text-blue-600 dark:hover:text-blue-400">Jadwal</a>
+                    <a href="#layanan"
+                        class="smooth-transition hover:text-blue-600 dark:hover:text-blue-400">Layanan</a>
+                    <a href="#artikel"
+                        class="smooth-transition hover:text-blue-600 dark:hover:text-blue-400">Artikel</a>
+                    <a href="#galeri" class="smooth-transition hover:text-blue-600 dark:hover:text-blue-400">Galeri</a>
+                    <a href="#kontak" class="smooth-transition hover:text-blue-600 dark:hover:text-blue-400">Kontak</a>
+                </div>
+
+                <div class="flex items-center gap-4">
+                    <button id="themeToggle" class="dark-mode-toggle">
+                        <div class="toggle-dot"></div>
+                    </button>
+                    <div id="hamburger" class="hamburger md:hidden">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="mobile-menu">
+        <a href="#beranda" class="text-white">Beranda</a>
+        <a href="#jadwal" class="text-white">Jadwal</a>
+        <a href="#layanan" class="text-white">Layanan</a>
+        <a href="#artikel" class="text-white">Artikel</a>
+        <a href="#galeri" class="text-white">Galeri</a>
+        <a href="#kontak" class="text-white">Kontak</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="beranda" class="relative pt-32 pb-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
+        <div class="blob hero-blob-1"></div>
+        <div class="blob hero-blob-2"></div>
+
+        <div class="max-w-6xl mx-auto relative z-10">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="animate-fade-in-up">
+                    <h1 class="text-5xl md:text-6xl font-bold mb-6 leading-tight">
+                        <span class="gradient-text">Selamat Datang</span> di Gereja Kasih Abadi
+                    </h1>
+                    <p class="text-xl text-slate-600 dark:text-slate-300 mb-8 leading-relaxed">
+                        Kami adalah komunitas yang hidup dan berkembang, bersama-sama menyebarkan Injil Kristus dengan
+                        penuh kasih dan dedikasi.
+                    </p>
+                    <div class="flex gap-4">
+                        <button
+                            class="px-8 py-3 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-lg font-semibold smooth-transition hover:shadow-lg hover:scale-105">
+                            Bergabunglah
+                        </button>
+                        <button
+                            class="px-8 py-3 glass text-slate-900 dark:text-white rounded-lg font-semibold smooth-transition hover:bg-white/20">
+                            Pelajari Lebih
+                        </button>
+                    </div>
+                </div>
+
+                <div class="animate-fade-in-up" style="animation-delay: 0.2s;">
+                    <div class="glass rounded-2xl overflow-hidden h-96 relative">
+                        <div class="carousel-container">
+                            <div class="carousel-slide active"
+                                style="background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%); background-size: cover;">
+                                <div class="text-center z-10">
+                                    <div class="text-8xl mb-4">🙏</div>
+                                    <p class="text-lg font-semibold text-white">Komunitas Iman yang Kuat</p>
+                                </div>
+                            </div>
+                            <div class="carousel-slide"
+                                style="background-image: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                                <div class="text-center z-10">
+                                    <div class="text-8xl mb-4">❤️</div>
+                                    <p class="text-lg font-semibold text-white">Melayani dengan Kasih</p>
+                                </div>
+                            </div>
+                            <div class="carousel-slide"
+                                style="background-image: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                                <div class="text-center z-10">
+                                    <div class="text-8xl mb-4">✨</div>
+                                    <p class="text-lg font-semibold text-white">Berkembang Bersama</p>
+                                </div>
+                            </div>
+                            <div class="carousel-slide"
+                                style="background-image: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">
+                                <div class="text-center z-10">
+                                    <div class="text-8xl mb-4">🕊️</div>
+                                    <p class="text-lg font-semibold text-white">Damai Sejahtera</p>
+                                </div>
+                            </div>
+
+                            <button class="carousel-nav prev" onclick="changeSlide(-1)">❮</button>
+                            <button class="carousel-nav next" onclick="changeSlide(1)">❯</button>
+
+                            <div class="carousel-controls">
+                                <span class="carousel-dot active" onclick="currentSlide(0)"></span>
+                                <span class="carousel-dot" onclick="currentSlide(1)"></span>
+                                <span class="carousel-dot" onclick="currentSlide(2)"></span>
+                                <span class="carousel-dot" onclick="currentSlide(3)"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-20 px-4 sm:px-6 lg:px-8 bg-slate-50 dark:bg-slate-900/50">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold mb-4 gradient-text">Tentang Kami</h2>
+                <p class="text-lg text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
+                    Dengan lebih dari 15 tahun melayani, kami berkomitmen untuk membangun iman yang kuat dan relevan
+                    dengan zaman.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="glass rounded-xl p-8 hover-lift">
+                    <div class="text-4xl mb-4">⛪</div>
+                    <h3 class="text-xl font-bold mb-3">Visi Kami</h3>
+                    <p class="text-slate-600 dark:text-slate-300">Membangun gereja yang hidup, bertumbuh, dan menjadi
+                        terang Kristus di tengah masyarakat.</p>
+                </div>
+
+                <div class="glass rounded-xl p-8 hover-lift" style="animation-delay: 0.1s;">
+                    <div class="text-4xl mb-4">💪</div>
+                    <h3 class="text-xl font-bold mb-3">Misi Kami</h3>
+                    <p class="text-slate-600 dark:text-slate-300">Menyebarkan Injil, melayani komunitas, dan
+                        memberdayakan setiap anggota untuk bertumbuh secara rohani.</p>
+                </div>
+
+                <div class="glass rounded-xl p-8 hover-lift" style="animation-delay: 0.2s;">
+                    <div class="text-4xl mb-4">❤️</div>
+                    <h3 class="text-xl font-bold mb-3">Nilai Kami</h3>
+                    <p class="text-slate-600 dark:text-slate-300">Kasih Kristus, integritas, transparansi, dan komitmen
+                        untuk melayani dengan sepenuh hati.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schedule Section -->
+    <section id="jadwal" class="py-20 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold mb-4 gradient-text">Jadwal Ibadah</h2>
+                <p class="text-lg text-slate-600 dark:text-slate-400">Bergabunglah dengan kami dalam ibadah yang penuh
+                    makna</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="glass rounded-xl p-8 hover-lift">
+                    <h3 class="text-2xl font-bold mb-4 text-blue-600 dark:text-blue-400">⛪ Ibadah Minggu</h3>
+                    <div class="space-y-4">
+                        <div
+                            class="flex justify-between items-center py-3 border-b border-slate-200 dark:border-slate-700">
+                            <span class="font-semibold">Sesi 1 (Anak-anak)</span>
+                            <span class="text-slate-600 dark:text-slate-400">07:00 - 08:30</span>
+                        </div>
+                        <div
+                            class="flex justify-between items-center py-3 border-b border-slate-200 dark:border-slate-700">
+                            <span class="font-semibold">Sesi 2 (Umum)</span>
+                            <span class="text-slate-600 dark:text-slate-400">09:00 - 11:00</span>
+                        </div>
+                        <div
+                            class="flex justify-between items-center py-3 border-b border-slate-200 dark:border-slate-700">
+                            <span class="font-semibold">Sesi 3 (Pemuda)</span>
+                            <span class="text-slate-600 dark:text-slate-400">19:00 - 21:00</span>
+                        </div>
+                    </div>
+                    <p class="text-sm text-slate-600 dark:text-slate-400 mt-6">📍 Jln. Kasih Sayang No. 123, Surabaya
+                    </p>
+                </div>
+
+                <div class="glass rounded-xl p-8 hover-lift">
+                    <h3 class="text-2xl font-bold mb-4 text-purple-600 dark:text-purple-400">📖 Kegiatan Lainnya</h3>
+                    <div class="space-y-4">
+                        <div
+                            class="flex justify-between items-center py-3 border-b border-slate-200 dark:border-slate-700">
+                            <span class="font-semibold">Kelompok Doa</span>
+                            <span class="text-slate-600 dark:text-slate-400">Rabu 19:30</span>
+                        </div>
+                        <div
+                            class="flex justify-between items-center py-3 border-b border-slate-200 dark:border-slate-700">
+                            <span class="font-semibold">Sekolah Minggu</span>
+                            <span class="text-slate-600 dark:text-slate-400">Minggu 08:00</span>
+                        </div>
+                        <div
+                            class="flex justify-between items-center py-3 border-b border-slate-200 dark:border-slate-700">
+                            <span class="font-semibold">Persekutuan Pemuda</span>
+                            <span class="text-slate-600 dark:text-slate-400">Jumat 18:00</span>
+                        </div>
+                    </div>
+                    <p class="text-sm text-slate-600 dark:text-slate-400 mt-6">Hubungi kami untuk informasi lebih lanjut
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="layanan" class="py-20 px-4 sm:px-6 lg:px-8 bg-slate-50 dark:bg-slate-900/50">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold mb-4 gradient-text">Pelayanan Kami</h2>
+                <p class="text-lg text-slate-600 dark:text-slate-400">Berbagai pelayanan untuk membantu pertumbuhan
+                    rohani Anda</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="glass rounded-xl p-8 hover-lift">
+                    <div class="text-5xl mb-4">🎵</div>
+                    <h3 class="text-xl font-bold mb-3">Worship & Music</h3>
+                    <p class="text-slate-600 dark:text-slate-300 mb-4">Pujian yang menyentuh hati dengan musisi berbakat
+                        dan melodi yang bermakna.</p>
+                    <button
+                        class="text-blue-600 dark:text-blue-400 font-semibold hover:text-blue-700 smooth-transition">Pelajari
+                        →</button>
+                </div>
+
+                <div class="glass rounded-xl p-8 hover-lift" style="animation-delay: 0.1s;">
+                    <div class="text-5xl mb-4">👨‍👩‍👧‍👦</div>
+                    <h3 class="text-xl font-bold mb-3">Keluarga & Anak</h3>
+                    <p class="text-slate-600 dark:text-slate-300 mb-4">Program khusus untuk keluarga dan pendidikan
+                        anak-anak yang berkualitas Kristen.</p>
+                    <button
+                        class="text-blue-600 dark:text-blue-400 font-semibold hover:text-blue-700 smooth-transition">Pelajari
+                        →</button>
+                </div>
+
+                <div class="glass rounded-xl p-8 hover-lift" style="animation-delay: 0.2s;">
+                    <div class="text-5xl mb-4">🤝</div>
+                    <h3 class="text-xl font-bold mb-3">Konseling & Doa</h3>
+                    <p class="text-slate-600 dark:text-slate-300 mb-4">Layanan konseling profesional dan doa pribadi
+                        untuk dukungan rohani dan emosional.</p>
+                    <button
+                        class="text-blue-600 dark:text-blue-400 font-semibold hover:text-blue-700 smooth-transition">Pelajari
+                        →</button>
+                </div>
+
+                <div class="glass rounded-xl p-8 hover-lift" style="animation-delay: 0.3s;">
+                    <div class="text-5xl mb-4">🌍</div>
+                    <h3 class="text-xl font-bold mb-3">Misi & Sosial</h3>
+                    <p class="text-slate-600 dark:text-slate-300 mb-4">Program kegiatan sosial dan misi yang menjangkau
+                        komunitas sekitar dengan cinta Kristus.</p>
+                    <button
+                        class="text-blue-600 dark:text-blue-400 font-semibold hover:text-blue-700 smooth-transition">Pelajari
+                        →</button>
+                </div>
+
+                <div class="glass rounded-xl p-8 hover-lift" style="animation-delay: 0.4s;">
+                    <div class="text-5xl mb-4">🎓</div>
+                    <h3 class="text-xl font-bold mb-3">Sekolah Minggu</h3>
+                    <p class="text-slate-600 dark:text-slate-300 mb-4">Pembelajaran Alkitab yang interaktif dan
+                        menyenangkan untuk segala usia.</p>
+                    <button
+                        class="text-blue-600 dark:text-blue-400 font-semibold hover:text-blue-700 smooth-transition">Pelajari
+                        →</button>
+                </div>
+
+                <div class="glass rounded-xl p-8 hover-lift" style="animation-delay: 0.5s;">
+                    <div class="text-5xl mb-4">💼</div>
+                    <h3 class="text-xl font-bold mb-3">Karir & Bisnis</h3>
+                    <p class="text-slate-600 dark:text-slate-300 mb-4">Bimbingan untuk integrasi iman dalam kehidupan
+                        profesional dan bisnis.</p>
+                    <button
+                        class="text-blue-600 dark:text-blue-400 font-semibold hover:text-blue-700 smooth-transition">Pelajari
+                        →</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="artikel" class="py-20 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold mb-4 gradient-text">Artikel & Berita Terbaru</h2>
+                <p class="text-lg text-slate-600 dark:text-slate-400">Inspirasi dan wawasan untuk memperdalam iman Anda
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <article class="glass rounded-xl overflow-hidden hover-lift">
+                    <div
+                        class="h-48 bg-gradient-to-br from-blue-400 to-blue-600 flex items-center justify-center text-4xl">
+                        ✝️
+                    </div>
+                    <div class="p-6">
+                        <p class="text-sm text-slate-500 dark:text-slate-400 mb-2">15 April 2024</p>
+                        <h3 class="text-xl font-bold mb-3">Makna Kebangkitan Kristus</h3>
+                        <p class="text-slate-600 dark:text-slate-300 mb-4 line-clamp-3">Memahami kehidupan baru yang
+                            dibawa oleh Yesus dalam konteks kehidupan modern kita.</p>
+                        <a href="#"
+                            class="text-blue-600 dark:text-blue-400 font-semibold hover:text-blue-700 smooth-transition">Baca
+                            selengkapnya →</a>
+                    </div>
+                </article>
+
+                <article class="glass rounded-xl overflow-hidden hover-lift" style="animation-delay: 0.1s;">
+                    <div
+                        class="h-48 bg-gradient-to-br from-purple-400 to-purple-600 flex items-center justify-center text-4xl">
+                        💝
+                    </div>
+                    <div class="p-6">
+                        <p class="text-sm text-slate-500 dark:text-slate-400 mb-2">12 April 2024</p>
+                        <h3 class="text-xl font-bold mb-3">Kasih Anda Terhadap Sesama</h3>
+                        <p class="text-slate-600 dark:text-slate-300 mb-4 line-clamp-3">Praktik kasih Kristus dalam
+                            kehidupan sehari-hari dan dampaknya bagi masyarakat.</p>
+                        <a href="#"
+                            class="text-blue-600 dark:text-blue-400 font-semibold hover:text-blue-700 smooth-transition">Baca
+                            selengkapnya →</a>
+                    </div>
+                </article>
+
+                <article class="glass rounded-xl overflow-hidden hover-lift" style="animation-delay: 0.2s;">
+                    <div
+                        class="h-48 bg-gradient-to-br from-orange-400 to-orange-600 flex items-center justify-center text-4xl">
+                        🙏
+                    </div>
+                    <div class="p-6">
+                        <p class="text-sm text-slate-500 dark:text-slate-400 mb-2">10 April 2024</p>
+                        <h3 class="text-xl font-bold mb-3">Kekuatan Doa dalam Hidup</h3>
+                        <p class="text-slate-600 dark:text-slate-300 mb-4 line-clamp-3">Bagaimana doa mengubah kehidupan
+                            dan membawa kita lebih dekat kepada Tuhan.</p>
+                        <a href="#"
+                            class="text-blue-600 dark:text-blue-400 font-semibold hover:text-blue-700 smooth-transition">Baca
+                            selengkapnya →</a>
+                    </div>
+                </article>
+            </div>
+
+            <div class="text-center mt-12">
+                <button
+                    class="px-8 py-3 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-lg font-semibold smooth-transition hover:shadow-lg hover:scale-105">
+                    Lihat Semua Artikel
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="galeri" class="py-20 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold mb-4 gradient-text">Galeri Foto</h2>
+                <p class="text-lg text-slate-600 dark:text-slate-400">Momen-momen berharga dari perjalanan iman kami
+                    bersama</p>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item glass" onclick="openLightbox(0)" style="animation-delay: 0s;">
+                    <div class="gallery-icon">📷</div>
+                </div>
+                <div class="gallery-item glass" onclick="openLightbox(1)" style="animation-delay: 0.1s;">
+                    <div class="gallery-icon">🙏</div>
+                </div>
+                <div class="gallery-item glass" onclick="openLightbox(2)" style="animation-delay: 0.2s;">
+                    <div class="gallery-icon">❤️</div>
+                </div>
+                <div class="gallery-item glass" onclick="openLightbox(3)" style="animation-delay: 0.3s;">
+                    <div class="gallery-icon">🎉</div>
+                </div>
+                <div class="gallery-item glass" onclick="openLightbox(4)" style="animation-delay: 0.4s;">
+                    <div class="gallery-icon">🎵</div>
+                </div>
+                <div class="gallery-item glass" onclick="openLightbox(5)" style="animation-delay: 0.5s;">
+                    <div class="gallery-icon">👥</div>
+                </div>
+                <div class="gallery-item glass" onclick="openLightbox(6)" style="animation-delay: 0.6s;">
+                    <div class="gallery-icon">⛪</div>
+                </div>
+                <div class="gallery-item glass" onclick="openLightbox(7)" style="animation-delay: 0.7s;">
+                    <div class="gallery-icon">✨</div>
+                </div>
+                <div class="gallery-item glass" onclick="openLightbox(8)" style="animation-delay: 0.8s;">
+                    <div class="gallery-icon">🕊️</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <button class="lightbox-close" onclick="closeLightbox()">✕</button>
+        <button class="lightbox-nav prev" onclick="prevImage()">❮</button>
+
+        <div class="lightbox-content">
+            <div class="lightbox-image" id="lightboxImage">📷</div>
+            <div class="lightbox-title" id="lightboxTitle">Kegiatan Gereja</div>
+        </div>
+
+        <button class="lightbox-nav next" onclick="nextImage()">❯</button>
+    </div>
+
+    <!-- Contact Section -->
+    <section id="kontak" class="py-20 px-4 sm:px-6 lg:px-8 bg-slate-50 dark:bg-slate-900/50">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold mb-4 gradient-text">Hubungi Kami</h2>
+                <p class="text-lg text-slate-600 dark:text-slate-400">Kami senang mendengar dari Anda. Jangan ragu untuk
+                    menghubungi.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="space-y-8">
+                    <div class="glass rounded-xl p-8">
+                        <div class="flex items-start space-x-4">
+                            <div class="text-3xl">📍</div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-2">Alamat</h3>
+                                <p class="text-slate-600 dark:text-slate-300">Jln. Kasih Sayang No. 123<br>Surabaya,
+                                    12340<br>Indonesia</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="glass rounded-xl p-8">
+                        <div class="flex items-start space-x-4">
+                            <div class="text-3xl">📞</div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-2">Telepon</h3>
+                                <p class="text-slate-600 dark:text-slate-300">(021) 1234-5678<br>(021) 9876-5432</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="glass rounded-xl p-8">
+                        <div class="flex items-start space-x-4">
+                            <div class="text-3xl">✉️</div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-2">Email</h3>
+                                <p class="text-slate-600 dark:text-slate-300">
+                                    info@gereja-kasih-abadi.id<br>hubungi@gereja-kasih-abadi.id</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="glass rounded-xl p-8 space-y-6">
+                    <div>
+                        <label class="block text-sm font-semibold mb-2">Nama Lengkap</label>
+                        <input type="text" placeholder="Masukkan nama Anda"
+                            class="w-full px-4 py-2 rounded-lg bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 focus:outline-none focus:ring-2 focus:ring-blue-500 smooth-transition">
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-semibold mb-2">Email</label>
+                        <input type="email" placeholder="Masukkan email Anda"
+                            class="w-full px-4 py-2 rounded-lg bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 focus:outline-none focus:ring-2 focus:ring-blue-500 smooth-transition">
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-semibold mb-2">Pesan</label>
+                        <textarea placeholder="Tuliskan pesan Anda" rows="4"
+                            class="w-full px-4 py-2 rounded-lg bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 focus:outline-none focus:ring-2 focus:ring-blue-500 smooth-transition resize-none"></textarea>
+                    </div>
+
+                    <button type="submit"
+                        class="w-full px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-lg font-semibold smooth-transition hover:shadow-lg hover:scale-105">
+                        Kirim Pesan
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 dark:bg-black text-white py-12 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div
+                            class="w-8 h-8 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg flex items-center justify-center">
+                            <span class="text-white font-bold">⛪</span>
+                        </div>
+                        <span class="font-bold">Gereja Kasih Abadi</span>
+                    </div>
+                    <p class="text-slate-400 text-sm">Membangun komunitas iman yang kuat dan relevan dengan Injil
+                        Kristus.</p>
+                </div>
+
+                <div>
+                    <h4 class="font-bold mb-4">Navigasi</h4>
+                    <ul class="space-y-2 text-sm text-slate-400">
+                        <li><a href="#beranda" class="hover:text-white smooth-transition">Beranda</a></li>
+                        <li><a href="#jadwal" class="hover:text-white smooth-transition">Jadwal</a></li>
+                        <li><a href="#layanan" class="hover:text-white smooth-transition">Layanan</a></li>
+                        <li><a href="#kontak" class="hover:text-white smooth-transition">Kontak</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-bold mb-4">Jadwal</h4>
+                    <ul class="space-y-2 text-sm text-slate-400">
+                        <li>Minggu: 07:00 - 21:00</li>
+                        <li>Rabu: 19:30</li>
+                        <li>Jumat: 18:00</li>
+                        <li>Hubungi kami</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-bold mb-4">Media Sosial</h4>
+                    <div class="flex space-x-4">
+                        <a href="#"
+                            class="w-10 h-10 glass rounded-lg flex items-center justify-center hover:bg-white/30 smooth-transition text-lg">f</a>
+                        <a href="#"
+                            class="w-10 h-10 glass rounded-lg flex items-center justify-center hover:bg-white/30 smooth-transition text-lg">𝕏</a>
+                        <a href="#"
+                            class="w-10 h-10 glass rounded-lg flex items-center justify-center hover:bg-white/30 smooth-transition text-lg">📷</a>
+                        <a href="#"
+                            class="w-10 h-10 glass rounded-lg flex items-center justify-center hover:bg-white/30 smooth-transition text-lg">▶️</a>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                class="border-t border-slate-800 pt-8 mt-8 flex flex-col md:flex-row justify-between items-center text-sm text-slate-400">
+                <p>&copy; 2024 Gereja Kasih Abadi. All rights reserved.</p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="#" class="hover:text-white smooth-transition">Kebijakan Privasi</a>
+                    <a href="#" class="hover:text-white smooth-transition">Syarat Layanan</a>
+                    <a href="#" class="hover:text-white smooth-transition">Hubungi Admin</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Dark mode toggle initialization
+        function initDarkMode() {
+            const htmlElement = document.documentElement;
+            const themeToggle = document.getElementById('themeToggle');
+
+            // Check for saved preference or default to light mode
+            const isDark = localStorage.getItem('theme') === 'dark';
+            if (isDark) {
+                htmlElement.classList.add('dark');
+            } else {
+                htmlElement.classList.remove('dark');
+            }
+
+            // Toggle on button click
+            themeToggle.addEventListener('click', () => {
+                const currentlyDark = htmlElement.classList.contains('dark');
+                if (currentlyDark) {
+                    htmlElement.classList.remove('dark');
+                    localStorage.setItem('theme', 'light');
+                } else {
+                    htmlElement.classList.add('dark');
+                    localStorage.setItem('theme', 'dark');
+                }
+            });
+        }
+
+        // Initialize dark mode when DOM is ready
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', initDarkMode);
+        } else {
+            initDarkMode();
+        }
+
+        // Carousel functionality
+        let currentSlideIndex = 0;
+
+        function changeSlide(n) {
+            showSlide(currentSlideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlide(currentSlideIndex = n);
+        }
+
+        function showSlide(n) {
+            const slides = document.querySelectorAll('.carousel-slide');
+            const dots = document.querySelectorAll('.carousel-dot');
+
+            if (n >= slides.length) {
+                currentSlideIndex = 0;
+            }
+            if (n < 0) {
+                currentSlideIndex = slides.length - 1;
+            }
+
+            slides.forEach(slide => slide.classList.remove('active'));
+            dots.forEach(dot => dot.classList.remove('active'));
+
+            if (slides[currentSlideIndex]) {
+                slides[currentSlideIndex].classList.add('active');
+            }
+            if (dots[currentSlideIndex]) {
+                dots[currentSlideIndex].classList.add('active');
+            }
+        }
+
+        // Auto-rotate carousel every 5 seconds
+        setInterval(() => {
+            changeSlide(1);
+        }, 5000);
+
+        // Hamburger menu toggle
+        function initHamburgerMenu() {
+            const hamburger = document.getElementById('hamburger');
+            const mobileMenu = document.getElementById('mobileMenu');
+
+            if (hamburger && mobileMenu) {
+                hamburger.addEventListener('click', () => {
+                    hamburger.classList.toggle('active');
+                    mobileMenu.classList.toggle('active');
+                });
+
+                // Close menu when a link is clicked
+                const menuLinks = mobileMenu.querySelectorAll('a');
+                menuLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        hamburger.classList.remove('active');
+                        mobileMenu.classList.remove('active');
+                    });
+                });
+            }
+        }
+
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', initHamburgerMenu);
+        } else {
+            initHamburgerMenu();
+        }
+
+        // Gallery lightbox functionality
+        const galleryImages = [{
+                icon: '📷',
+                title: 'Dokumentasi Kegiatan'
+            },
+            {
+                icon: '🙏',
+                title: 'Doa Bersama'
+            },
+            {
+                icon: '❤️',
+                title: 'Pelayanan Kasih'
+            },
+            {
+                icon: '🎉',
+                title: 'Perayaan Spesial'
+            },
+            {
+                icon: '🎵',
+                title: 'Ibadah Nyanyian'
+            },
+            {
+                icon: '👥',
+                title: 'Komunitas Gereja'
+            },
+            {
+                icon: '⛪',
+                title: 'Gedung Gereja'
+            },
+            {
+                icon: '✨',
+                title: 'Momen Istimewa'
+            },
+            {
+                icon: '🕊️',
+                title: 'Damai Sejahtera'
+            }
+        ];
+
+        let currentGalleryIndex = 0;
+
+        function openLightbox(index) {
+            currentGalleryIndex = index;
+            const lightbox = document.getElementById('lightbox');
+            updateLightboxContent();
+            lightbox.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox() {
+            const lightbox = document.getElementById('lightbox');
+            lightbox.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+
+        function nextImage() {
+            currentGalleryIndex = (currentGalleryIndex + 1) % galleryImages.length;
+            updateLightboxContent();
+        }
+
+        function prevImage() {
+            currentGalleryIndex = (currentGalleryIndex - 1 + galleryImages.length) % galleryImages.length;
+            updateLightboxContent();
+        }
+
+        function updateLightboxContent() {
+            const image = galleryImages[currentGalleryIndex];
+            document.getElementById('lightboxImage').textContent = image.icon;
+            document.getElementById('lightboxTitle').textContent = image.title;
+        }
+
+        // Close lightbox when clicking on background
+        document.addEventListener('DOMContentLoaded', () => {
+            const lightbox = document.getElementById('lightbox');
+            lightbox.addEventListener('click', (e) => {
+                if (e.target === lightbox) {
+                    closeLightbox();
+                }
+            });
+
+            // Keyboard navigation
+            document.addEventListener('keydown', (e) => {
+                if (lightbox.classList.contains('active')) {
+                    if (e.key === 'ArrowRight') nextImage();
+                    if (e.key === 'ArrowLeft') prevImage();
+                    if (e.key === 'Escape') closeLightbox();
+                }
+            });
+        });
+
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Form submission
+        document.querySelector('form').addEventListener('submit', function (e) {
+            e.preventDefault();
+            alert('Terima kasih telah menghubungi kami! Kami akan segera merespons pesan Anda.');
+            this.reset();
+        });
+    </script>
+</body>
+
+</html>
