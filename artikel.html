@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gereja Kasih Abadi - Pelayanan Injil yang Hidup</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class'
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/style.css">
+
+<body class="bg-white dark:bg-slate-950 text-slate-900 dark:text-slate-50 smooth-transition">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 smooth-transition">
+        <div class="glass">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+                <div class="flex items-center space-x-2">
+                    <div
+                        class="w-10 h-10 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg flex items-center justify-center">
+                        <span class="text-white font-bold text-lg">⛪</span>
+                    </div>
+                    <span class="font-bold text-lg gradient-text">Gereja Kasih Abadi</span>
+                </div>
+
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#beranda"
+                        class="smooth-transition hover:text-blue-600 dark:hover:text-blue-400">Beranda</a>
+                    <a href="#jadwal" class="smooth-transition hover:text-blue-600 dark:hover:text-blue-400">Jadwal</a>
+                    <a href="#layanan"
+                        class="smooth-transition hover:text-blue-600 dark:hover:text-blue-400">Layanan</a>
+                    <a href="#artikel"
+                        class="smooth-transition hover:text-blue-600 dark:hover:text-blue-400">Artikel</a>
+                    <a href="#galeri" class="smooth-transition hover:text-blue-600 dark:hover:text-blue-400">Galeri</a>
+                    <a href="#kontak" class="smooth-transition hover:text-blue-600 dark:hover:text-blue-400">Kontak</a>
+                </div>
+
+                <div class="flex items-center gap-4">
+                    <button id="themeToggle" class="dark-mode-toggle">
+                        <div class="toggle-dot"></div>
+                    </button>
+                    <div id="hamburger" class="hamburger md:hidden">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="mobile-menu">
+        <a href="#beranda" class="text-white">Beranda</a>
+        <a href="#jadwal" class="text-white">Jadwal</a>
+        <a href="#layanan" class="text-white">Layanan</a>
+        <a href="#artikel" class="text-white">Artikel</a>
+        <a href="#galeri" class="text-white">Galeri</a>
+        <a href="#kontak" class="text-white">Kontak</a>
+    </div>
+
+    <main class="py-12 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-3xl mx-auto">
+            <!-- Back Button -->
+            <div class="back-button" onclick="window.location.href='church-landing.html#artikel'">
+                ← Kembali ke Artikel
+            </div>
+
+            <!-- Article Header -->
+            <div class="mb-8">
+                <div
+                    class="h-64 bg-gradient-to-br from-blue-400 to-blue-600 rounded-2xl flex items-center justify-center text-8xl mb-8">
+                    ✝️
+                </div>
+
+                <div class="flex flex-wrap items-center gap-4 mb-6">
+                    <span
+                        class="bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 px-4 py-1 rounded-full text-sm font-semibold">Iman
+                        & Spiritualitas</span>
+                    <span class="text-slate-500 dark:text-slate-400">15 April 2024</span>
+                    <span class="text-slate-500 dark:text-slate-400">•</span>
+                    <span class="text-slate-500 dark:text-slate-400">5 menit baca</span>
+                </div>
+
+                <h1 class="text-5xl font-bold mb-4 leading-tight">Makna Kebangkitan Kristus</h1>
+                <p class="text-xl text-slate-600 dark:text-slate-400">Memahami kehidupan baru yang dibawa oleh Yesus
+                    dalam konteks kehidupan modern kita.</p>
+            </div>
+
+            <!-- Article Author -->
+            <div class="article-author mb-12">
+                <div class="author-avatar">👨‍🏫</div>
+                <div>
+                    <p class="font-semibold">Pdt. Budi Santoso</p>
+                    <p class="text-sm text-slate-500 dark:text-slate-400">Pendeta Senior, Gereja Kami</p>
+                </div>
+            </div>
+
+            <!-- Article Body -->
+            <article class="glass rounded-2xl p-8 mb-12">
+                <div class="article-content text-slate-700 dark:text-slate-300">
+                    <p>
+                        Kebangkitan Kristus adalah peristiwa paling penting dalam sejarah kemanusiaan. Ini bukan hanya
+                        tentang seorang tokoh religius yang bangkit dari kematian, tetapi tentang transformasi
+                        fundamental dalam hubungan manusia dengan Tuhan dan dengan diri sendiri.
+                    </p>
+
+                    <h2>Makna Teologis Kebangkitan</h2>
+                    <p>
+                        Dalam konteks teologi Kristen, kebangkitan Kristus memiliki beberapa makna mendalam:
+                    </p>
+                    <ul>
+                        <li><strong>Kemenangan atas Dosa dan Kematian:</strong> Kebangkitan menunjukkan bahwa kekuatan
+                            dosa dan kematian telah dikalahkan. Ini memberikan harapan bahwa manusia tidak selamanya
+                            terjerat dalam lingkaran dosa.</li>
+                        <li><strong>Validasi Identitas Kristus:</strong> Kebangkitan memvalidasi klaim Yesus sebagai
+                            Anak Tuhan. Ini adalah tanda tangan Tuhan yang mengesahkan keseluruhan kehidupan dan ajaran
+                            Kristus.</li>
+                        <li><strong>Jaminan Kehidupan Kekal:</strong> Kebangkitan Kristus adalah jaminan bahwa
+                            orang-orang percaya akan juga mengalami kebangkitan dan kehidupan kekal.</li>
+                    </ul>
+
+                    <h2>Dampak dalam Kehidupan Sehari-hari</h2>
+                    <p>
+                        Ketika kita memahami makna kebangkitan Kristus, hal ini harus mengubah cara kita hidup:
+                    </p>
+
+                    <h3>1. Perspektif Baru tentang Kematian</h3>
+                    <p>
+                        Kebangkitan mengubah perspektif kita tentang kematian. Kematian bukan akhir, tetapi transisi.
+                        Bagi orang percaya, kematian adalah pintu menuju kehidupan yang lebih baik. Ini memberi kami
+                        keberanian untuk menghadapi tantangan hidup tanpa takut.
+                    </p>
+
+                    <h3>2. Motivasi untuk Hidup Bermakna</h3>
+                    <p>
+                        Jika kita benar-benar percaya pada kebangkitan, kita seharusnya menjalani hidup kita dengan
+                        tujuan yang jelas dan bermakna. Kita tidak lagi hidup hanya untuk kepuasan sementara, tetapi
+                        untuk membangun warisan rohani yang kekal.
+                    </p>
+
+                    <blockquote>
+                        "Karena itu, jika kamu telah dibangkitkan bersama-sama dengan Kristus, carilah perkara-perkara
+                        yang di atas, di mana Kristus duduk di sebelah kanan Allah." - Kolose 3:1
+                    </blockquote>
+
+                    <h3>3. Kasih dan Pengampunan yang Lebih Dalam</h3>
+                    <p>
+                        Kebangkitan Kristus adalah manifestasi tertinggi dari kasih dan pengampunan Tuhan. Ketika kita
+                        merenungkan pengorbanan dan kebangkitan-Nya, hati kita seharusnya terpanggil untuk menunjukkan
+                        kasih dan pengampunan yang sama kepada sesama.
+                    </p>
+
+                    <h2>Merayakan Kebangkitan dalam Komunitas</h2>
+                    <p>
+                        Gereja kami berkomitmen untuk membantu Anda memahami dan merayakan makna kebangkitan Kristus
+                        setiap hari. Melalui Ibadah, Alkitab, dan komunitas persekutuan, kami bersama-sama memperdalam
+                        iman kita dan hidup dalam kuasa kebangkitan.
+                    </p>
+
+                    <p>
+                        Jika Anda ingin mendiskusikan lebih lanjut tentang topik ini atau memiliki pertanyaan rohani,
+                        kami dengan senang hati membuka pintu kami untuk Anda. Bergabunglah dengan kami dalam perjalanan
+                        iman yang transformatif.
+                    </p>
+                </div>
+            </article>
+
+            <!-- Share Article -->
+            <div class="mb-12 p-6 glass rounded-xl">
+                <p class="font-semibold mb-4">Bagikan Artikel Ini</p>
+                <div class="flex gap-4">
+                    <button
+                        class="flex-1 bg-blue-600 hover:bg-blue-700 text-white py-2 rounded-lg font-semibold smooth-transition">
+                        Bagikan
+                    </button>
+                    <button
+                        class="flex-1 border-2 border-blue-600 text-blue-600 dark:text-blue-400 hover:bg-blue-50 dark:hover:bg-blue-900/20 py-2 rounded-lg font-semibold smooth-transition">
+                        Simpan
+                    </button>
+                </div>
+            </div>
+
+            <!-- Related Articles -->
+            <div>
+                <h2 class="text-3xl font-bold mb-8 gradient-text">Artikel Terkait</h2>
+                <div class="related-articles">
+                    <div class="glass article-card" onclick="alert('Navigasi ke artikel detail')">
+                        <div class="article-thumbnail bg-gradient-to-br from-purple-400 to-purple-600">
+                            💝
+                        </div>
+                        <p class="text-sm text-slate-500 dark:text-slate-400 mb-2">12 April 2024</p>
+                        <h3 class="font-bold mb-2">Kasih Anda Terhadap Sesama</h3>
+                        <p class="text-sm text-slate-600 dark:text-slate-400 line-clamp-2">Praktik kasih Kristus dalam
+                            kehidupan sehari-hari dan dampaknya bagi masyarakat.</p>
+                    </div>
+
+                    <div class="glass article-card" onclick="alert('Navigasi ke artikel detail')">
+                        <div class="article-thumbnail bg-gradient-to-br from-orange-400 to-orange-600">
+                            🙏
+                        </div>
+                        <p class="text-sm text-slate-500 dark:text-slate-400 mb-2">10 April 2024</p>
+                        <h3 class="font-bold mb-2">Kekuatan Doa dalam Hidup</h3>
+                        <p class="text-sm text-slate-600 dark:text-slate-400 line-clamp-2">Bagaimana doa mengubah
+                            kehidupan dan membawa kita lebih dekat kepada Tuhan.</p>
+                    </div>
+
+                    <div class="glass article-card" onclick="alert('Navigasi ke artikel detail')">
+                        <div class="article-thumbnail bg-gradient-to-br from-green-400 to-green-600">
+                            🌱
+                        </div>
+                        <p class="text-sm text-slate-500 dark:text-slate-400 mb-2">8 April 2024</p>
+                        <h3 class="font-bold mb-2">Pertumbuhan Rohani yang Berkelanjutan</h3>
+                        <p class="text-sm text-slate-600 dark:text-slate-400 line-clamp-2">Langkah-langkah praktis untuk
+                            terus berkembang dalam iman Anda.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 dark:bg-black text-white py-12 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div
+                            class="w-8 h-8 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg flex items-center justify-center">
+                            <span class="text-white font-bold">⛪</span>
+                        </div>
+                        <span class="font-bold">Gereja Kasih Abadi</span>
+                    </div>
+                    <p class="text-slate-400 text-sm">Membangun komunitas iman yang kuat dan relevan dengan Injil
+                        Kristus.</p>
+                </div>
+
+                <div>
+                    <h4 class="font-bold mb-4">Navigasi</h4>
+                    <ul class="space-y-2 text-sm text-slate-400">
+                        <li><a href="#beranda" class="hover:text-white smooth-transition">Beranda</a></li>
+                        <li><a href="#jadwal" class="hover:text-white smooth-transition">Jadwal</a></li>
+                        <li><a href="#layanan" class="hover:text-white smooth-transition">Layanan</a></li>
+                        <li><a href="#kontak" class="hover:text-white smooth-transition">Kontak</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-bold mb-4">Jadwal</h4>
+                    <ul class="space-y-2 text-sm text-slate-400">
+                        <li>Minggu: 07:00 - 21:00</li>
+                        <li>Rabu: 19:30</li>
+                        <li>Jumat: 18:00</li>
+                        <li>Hubungi kami</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-bold mb-4">Media Sosial</h4>
+                    <div class="flex space-x-4">
+                        <a href="#"
+                            class="w-10 h-10 glass rounded-lg flex items-center justify-center hover:bg-white/30 smooth-transition text-lg">f</a>
+                        <a href="#"
+                            class="w-10 h-10 glass rounded-lg flex items-center justify-center hover:bg-white/30 smooth-transition text-lg">𝕏</a>
+                        <a href="#"
+                            class="w-10 h-10 glass rounded-lg flex items-center justify-center hover:bg-white/30 smooth-transition text-lg">📷</a>
+                        <a href="#"
+                            class="w-10 h-10 glass rounded-lg flex items-center justify-center hover:bg-white/30 smooth-transition text-lg">▶️</a>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                class="border-t border-slate-800 pt-8 mt-8 flex flex-col md:flex-row justify-between items-center text-sm text-slate-400">
+                <p>&copy; 2024 Gereja Kasih Abadi. All rights reserved.</p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="#" class="hover:text-white smooth-transition">Kebijakan Privasi</a>
+                    <a href="#" class="hover:text-white smooth-transition">Syarat Layanan</a>
+                    <a href="#" class="hover:text-white smooth-transition">Hubungi Admin</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Dark mode toggle initialization
+        function initDarkMode() {
+            const htmlElement = document.documentElement;
+            const themeToggle = document.getElementById('themeToggle');
+
+            // Check for saved preference or default to light mode
+            const isDark = localStorage.getItem('theme') === 'dark';
+            if (isDark) {
+                htmlElement.classList.add('dark');
+            } else {
+                htmlElement.classList.remove('dark');
+            }
+
+            // Toggle on button click
+            themeToggle.addEventListener('click', () => {
+                const currentlyDark = htmlElement.classList.contains('dark');
+                if (currentlyDark) {
+                    htmlElement.classList.remove('dark');
+                    localStorage.setItem('theme', 'light');
+                } else {
+                    htmlElement.classList.add('dark');
+                    localStorage.setItem('theme', 'dark');
+                }
+            });
+        }
+
+        // Initialize dark mode when DOM is ready
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', initDarkMode);
+        } else {
+            initDarkMode();
+        }
+
+        // Carousel functionality
+        let currentSlideIndex = 0;
+
+        function changeSlide(n) {
+            showSlide(currentSlideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlide(currentSlideIndex = n);
+        }
+
+        function showSlide(n) {
+            const slides = document.querySelectorAll('.carousel-slide');
+            const dots = document.querySelectorAll('.carousel-dot');
+
+            if (n >= slides.length) {
+                currentSlideIndex = 0;
+            }
+            if (n < 0) {
+                currentSlideIndex = slides.length - 1;
+            }
+
+            slides.forEach(slide => slide.classList.remove('active'));
+            dots.forEach(dot => dot.classList.remove('active'));
+
+            if (slides[currentSlideIndex]) {
+                slides[currentSlideIndex].classList.add('active');
+            }
+            if (dots[currentSlideIndex]) {
+                dots[currentSlideIndex].classList.add('active');
+            }
+        }
+
+        // Auto-rotate carousel every 5 seconds
+        setInterval(() => {
+            changeSlide(1);
+        }, 5000);
+
+        // Hamburger menu toggle
+        function initHamburgerMenu() {
+            const hamburger = document.getElementById('hamburger');
+            const mobileMenu = document.getElementById('mobileMenu');
+
+            if (hamburger && mobileMenu) {
+                hamburger.addEventListener('click', () => {
+                    hamburger.classList.toggle('active');
+                    mobileMenu.classList.toggle('active');
+                });
+
+                // Close menu when a link is clicked
+                const menuLinks = mobileMenu.querySelectorAll('a');
+                menuLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        hamburger.classList.remove('active');
+                        mobileMenu.classList.remove('active');
+                    });
+                });
+            }
+        }
+
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', initHamburgerMenu);
+        } else {
+            initHamburgerMenu();
+        }
+
+        // Gallery lightbox functionality
+        const galleryImages = [{
+                icon: '📷',
+                title: 'Dokumentasi Kegiatan'
+            },
+            {
+                icon: '🙏',
+                title: 'Doa Bersama'
+            },
+            {
+                icon: '❤️',
+                title: 'Pelayanan Kasih'
+            },
+            {
+                icon: '🎉',
+                title: 'Perayaan Spesial'
+            },
+            {
+                icon: '🎵',
+                title: 'Ibadah Nyanyian'
+            },
+            {
+                icon: '👥',
+                title: 'Komunitas Gereja'
+            },
+            {
+                icon: '⛪',
+                title: 'Gedung Gereja'
+            },
+            {
+                icon: '✨',
+                title: 'Momen Istimewa'
+            },
+            {
+                icon: '🕊️',
+                title: 'Damai Sejahtera'
+            }
+        ];
+
+        let currentGalleryIndex = 0;
+
+        function openLightbox(index) {
+            currentGalleryIndex = index;
+            const lightbox = document.getElementById('lightbox');
+            updateLightboxContent();
+            lightbox.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox() {
+            const lightbox = document.getElementById('lightbox');
+            lightbox.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+
+        function nextImage() {
+            currentGalleryIndex = (currentGalleryIndex + 1) % galleryImages.length;
+            updateLightboxContent();
+        }
+
+        function prevImage() {
+            currentGalleryIndex = (currentGalleryIndex - 1 + galleryImages.length) % galleryImages.length;
+            updateLightboxContent();
+        }
+
+        function updateLightboxContent() {
+            const image = galleryImages[currentGalleryIndex];
+            document.getElementById('lightboxImage').textContent = image.icon;
+            document.getElementById('lightboxTitle').textContent = image.title;
+        }
+
+        // Close lightbox when clicking on background
+        document.addEventListener('DOMContentLoaded', () => {
+            const lightbox = document.getElementById('lightbox');
+            lightbox.addEventListener('click', (e) => {
+                if (e.target === lightbox) {
+                    closeLightbox();
+                }
+            });
+
+            // Keyboard navigation
+            document.addEventListener('keydown', (e) => {
+                if (lightbox.classList.contains('active')) {
+                    if (e.key === 'ArrowRight') nextImage();
+                    if (e.key === 'ArrowLeft') prevImage();
+                    if (e.key === 'Escape') closeLightbox();
+                }
+            });
+        });
+
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Form submission
+        document.querySelector('form').addEventListener('submit', function (e) {
+            e.preventDefault();
+            alert('Terima kasih telah menghubungi kami! Kami akan segera merespons pesan Anda.');
+            this.reset();
+        });
+    </script>
+</body>
+
+</html>
