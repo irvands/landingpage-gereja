@@ -3,7 +3,7 @@
         }
 
         .glass {
-            background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(248, 250, 252, 0.95));
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.5), rgba(248, 250, 252, 0.95));
             backdrop-filter: blur(10px);
                -webkit-backdrop-filter: blur(10px);
             border: 0px solid rgba(59, 130, 246, 0.2);
